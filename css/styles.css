@@ -1,0 +1,150 @@
+/* Ini CSS */
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sambutan User */
+.inline{
+    display: inline;
+}
+
+.nav{
+    display: flex;
+}
+
+nav>a{
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.photo-banner{    
+    background-position: center;
+    background-size: cover;    
+    height: 480px;
+}
+
+.photo-1{
+    background-image: url(../assets/1.jpg);
+}
+.photo-2{
+    background-image: url(../assets/2.jpg);
+}
+.photo-3{
+    background-image: url(../assets/3.jpg);
+}
+
+.profile-icon{
+    height: 50px;
+    width: 50px;    
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profile-satu{
+    background-image: url(../assets/pt.png);
+}
+
+.profile-dua{
+    background-image: url(../assets/lokasi.png);
+}
+
+.profile-tiga{
+    background-image: url(../assets/kontak.png);
+}
+
+.profile-icon-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fortopolio-container{
+    height: 200px;
+}
+
+.profile-icon-container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fortopolio-satu{
+    background-image: url(../assets/pupuk.jpg);
+}
+
+.fortopolio-dua{
+    background-image: url(../assets/pupuk2.jpg);
+}
+
+.fortopolio-tiga{
+    background-image: url(../assets/pupuk3.jpg);
+}
+
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.form-input, .result{
+    width: 40%;
+}
+.form-field{
+    margin-bottom: 15px;
+}
+
+label{
+    display: inline-block;
+    width: 110px;
+    margin-top: 12px
+}
+
+input[type="text"],
+input[type="date"],
+textarea{
+    width: calc(100% -100px);
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea{
+    resize: vertical;
+    height: 100px;
+}
+
+.text-area-label{
+    vertical-align: top;
+}
+
+.result{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+}
+
+.footer-made{
+    text-align: center;
+}
+
+/* menerapkan max-width ( < 600 ) */
+@media only screen and (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+    }
+}
+
